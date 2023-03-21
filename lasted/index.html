@@ -1,10 +1,15 @@
-function App() {
-
-  return (
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM - Apresentação</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
   <body>
     <header>
-      <div className="container">
-        <nav className="homeOptions">
+      <div class="container">
+        <nav class="homeOptions">
           <ul>
             <li><a href="#">Início</a></li>  
             <li><a href="#">Recursos</a></li>
@@ -17,12 +22,14 @@ function App() {
               <li> <a href="#">Entrar</a></li>
             </ul>
           </nav>
+        </nav>
       </div>
     </header>
+
     <main>
-      <section className="product">
-        <div className="container">
-          <h1 className="main-title">GRAFIX</h1>
+      <section class="product">
+        <div class="container">
+          <h1 class="main-title">GRAFIX</h1>
           <h2>Gerenciando suas relações com clientes</h2>
           <p>
             O CRM é uma ferramenta essencial para gerenciar seus clientes de
@@ -31,34 +38,35 @@ function App() {
             oportunidades, negócios e muito mais.  
           </p>
           <div id="slider">
-            {/* <img className="selected" src="images/perfil-roxo2.png" alt="Image1">
+            <img class="selected" src="images/perfil-roxo2.png" alt="Image1">
             <img src="images/menu-roxo2.png" alt="Image2">
             <img src="images/menu-roxo4.png" alt="Image3">
-            <img src="images/pag 3-roxo2.png" alt="Image4"> */}
+            <img src="images/pag 3-roxo2.png" alt="Image4">
           </div>
 
-          <a href="" className="btn-primary">Experimente agora</a>
+          <a href="" class="btn-primary">Experimente agora</a>
           
         </div>
+        
       </section>
 
-      <section className="features">
-        <div className="container">
+      <section class="features">
+        <div class="container">
           <h2>Recursos do CRM</h2>
           <ul>
-            <li><i className="features1"></i> Gerenciamento de contatos</li>
-            <li><i className="features2"></i> Geração de leads</li>
-            <li><i className="features3"></i> Análise de oportunidades</li>
-            <li><i className="features4"></i> Acompanhamento de negócios</li>
+            <li><i class="features1"></i> Gerenciamento de contatos</li>
+            <li><i class="features2"></i> Geração de leads</li>
+            <li><i class="features3"></i> Análise de oportunidades</li>
+            <li><i class="features4"></i> Acompanhamento de negócios</li>
           </ul>
         </div>
       </section>
 
-      <section className="pricing">
-        <div className="container">
+      <section class="pricing">
+        <div class="container">
           <h2>Planos do CRM</h2>
-          <div className="pricing-table">
-            <div className="pricing-card">
+          <div class="pricing-table">
+            <div class="pricing-card">
               <h3>Experimente Gratuitamente</h3>
               <p>Para pequenas empresas</p>
               <h4>R$0,00 por 15 dias</h4>
@@ -68,11 +76,11 @@ function App() {
                 <li>Análise de oportunidades</li>
                 <li>Acompanhamento de negócios</li>
               </ul>
-              <div className="testeBtn">
-                <a href="freeTrial.html" className="btn-secondary">Experimente agora</a>
+              <div class="testeBtn">
+                <a href="freeTrial.html" class="btn-secondary">Experimente agora</a>
               </div>
             </div>
-            <div className="pricing-card">
+            <div class="pricing-card">
               <h3>Plano Avançado</h3>
               <p>Para médias empresas</p>
               <h4>R$ 49,99/mês</h4>
@@ -83,11 +91,11 @@ function App() {
                 <li>Acompanhamento de negócios</li>
                 <li>Relatórios personalizados</li>
               </ul>
-              <div className="testeBtn">
-                <a href="freeTrial.html" className="btn-secondary">Experimente agora</a>
+              <div class="testeBtn">
+                <a href="freeTrial.html" class="btn-secondary">Experimente agora</a>
               </div>
             </div>
-            <div className="pricing-card">
+            <div class="pricing-card">
               <h3>Plano Corporativo</h3>
               <p>Para grandes empresas</p>
               <h4>R$ 99,99/mês</h4>
@@ -99,27 +107,32 @@ function App() {
                 <li>Relatórios personalizados</li>
                 <li>Integração com outros sistemas</li>
               </ul>
-              <div className="testeBtn">
-                <a href="#" className="btn-secondary">Experimente agora</a>
+              <div class="testeBtn">
+                <a href="#" class="btn-secondary">Experimente agora</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="contact">
-        <div className="container">
+      <section class="contact">
+        <div class="container">
           <h2>Entre em contato conosco</h2>
           <form action="#">
             <input type="text" placeholder="Nome completo" required />
             <input type="email" placeholder="E-mail" required />
             <textarea placeholder="Mensagem"></textarea>
-            <button type="submit" className="btn-primary">Enviar</button>
+            <button type="submit" class="btn-primary">Enviar</button>
           </form>
         </div>
       </section>
     </main>
-  </body>
-  );
-}
 
-export default App;
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 CRM - Gerenciando suas relações com clientes</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

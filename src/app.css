@@ -1,0 +1,406 @@
+/* reset.css */
+
+.Budy {
+  background-color: red;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* global styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+  font-family: "Secular One", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #4d10e8, #b72fe0);
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title-crm {
+  text-align: justify;
+}
+
+/* header */
+
+header {
+  background-color: #fff;
+}
+
+.homeOptions {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.homeOptions ul {
+  display: flex;
+}
+
+.homeOptions li {
+  display: flex;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.homeOptions a {
+  color: #9f22e7;
+}
+
+.homeOptions li:hover {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+/* product section */
+
+.product {
+  background: url(images/fundoCerto.png);
+  background-repeat: no-repeat;
+  background-position: 95% 70%;
+  background-size: 800px;
+  opacity: 1;
+  padding: 50px 0;
+}
+
+.product h1 {
+  font-size: 70px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.main-title {
+  max-width: 310px;
+  letter-spacing: 3px;
+  border-right: 3px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: fadeInUp 2s ease forwards, typing 7s infinite,
+    cursor 0.5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.product h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.product p {
+  max-width: 900px;
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+#slider {
+  width: 750px;
+  height: 450px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#slider img {
+  opacity: 0;
+  position: absolute;
+  width: 750px;
+  height: 450px;
+  transition: opacity 800ms;
+}
+
+#slider img.selected {
+  opacity: 1;
+}
+
+.img-crm {
+  display: flex;
+}
+
+.img-carrousel {
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+
+/* features section */
+
+.features {
+  padding: 100px 0;
+  display: flex;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.features ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.features ul li i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #9676e6;
+}
+
+.features ul li:last-child {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+/* pricing section */
+
+.pricing-table {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pricing {
+  /* background-color: #eee; */
+  padding: 100px 0;
+  display: flex;
+  flex: 1;
+}
+
+.pricing h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-card {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid purple;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  text-align: center;
+  width: 30%;
+  position: relative;
+  color: #000;
+}
+
+.pricing-card h3 {
+  font-size: 20px;
+  color: #000;
+}
+
+.pricing-plan p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.pricing-card ul {
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.pricing-card ul li {
+  font-size: 16px;
+  list-style-type: disc;
+  color: #000;
+}
+
+.pricing-card h4 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* contact section */
+
+.contact {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+.testeBtn {
+  position: absolute;
+  bottom: 8%;
+}
+
+.btn-primary {
+  background-color: #9f22e7;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 40px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+  background-color: #9f22e7;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5834b5;
+}
+
+.btn-submit {
+  background-color: #9676e6;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #5834b5;
+}
+
+.btn-primary:hover {
+  background-color: #3606b1;
+}
+
+/* footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .features {
+    padding: 50px 0;
+  }
+
+  .features h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .features ul li {
+    margin-right: 20px;
+
+    margin-bottom: 20px;
+  }
+
+  .pricing {
+    padding: 50px 0;
+  }
+
+  .pricing h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-plan {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+}
