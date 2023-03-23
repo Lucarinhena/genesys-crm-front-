@@ -1,24 +1,11 @@
+import { Card } from './components/Card';
+import { Header } from './components/Header'
+
 function App() {
 
-  return (
+  return (  
   <body>
-    <header>
-      <div className="container">
-        <nav className="homeOptions">
-          <ul>
-            <li><a href="#">Início</a></li>  
-            <li><a href="#">Recursos</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Quem somos?</a></li>
-          </ul>
-            <ul>
-              <li> <a href="#">Cadastrar</a> </li>
-              <li> <a href="#">Entrar</a></li>
-            </ul>
-          </nav>
-      </div>
-    </header>
+    <Header />  
     <main>
       <section className="product">
         <div className="container">
@@ -31,10 +18,10 @@ function App() {
             oportunidades, negócios e muito mais.  
           </p>
           <div id="slider">
-            {/* <img className="selected" src="images/perfil-roxo2.png" alt="Image1">
-            <img src="images/menu-roxo2.png" alt="Image2">
-            <img src="images/menu-roxo4.png" alt="Image3">
-            <img src="images/pag 3-roxo2.png" alt="Image4"> */}
+            <img className="selected" src="./src/images/perfil-roxo2.png" alt="Image1"></img>
+            <img src="./src/images/menu-roxo2.png" alt="Image2"></img>
+            <img src="./src/images/menu-roxo4.png" alt="Image3"></img>
+            <img src="./src/images/pag 3-roxo2.png" alt="Image4"></img>
           </div>
 
           <a href="" className="btn-primary">Experimente agora</a>
@@ -58,51 +45,36 @@ function App() {
         <div className="container">
           <h2>Planos do CRM</h2>
           <div className="pricing-table">
-            <div className="pricing-card">
-              <h3>Experimente Gratuitamente</h3>
-              <p>Para pequenas empresas</p>
-              <h4>R$0,00 por 15 dias</h4>
-              <ul>
-                <li>Gerenciamento de contatos</li>
-                <li>Geração de leads</li>
-                <li>Análise de oportunidades</li>
-                <li>Acompanhamento de negócios</li>
-              </ul>
-              <div className="testeBtn">
-                <a href="freeTrial.html" className="btn-secondary">Experimente agora</a>
-              </div>
-            </div>
-            <div className="pricing-card">
-              <h3>Plano Avançado</h3>
-              <p>Para médias empresas</p>
-              <h4>R$ 49,99/mês</h4>
-              <ul>
-                <li>Gerenciamento de contatos</li>
-                <li>Geração de leads</li>
-                <li>Análise de oportunidades</li>
-                <li>Acompanhamento de negócios</li>
-                <li>Relatórios personalizados</li>
-              </ul>
-              <div className="testeBtn">
-                <a href="freeTrial.html" className="btn-secondary">Experimente agora</a>
-              </div>
-            </div>
-            <div className="pricing-card">
-              <h3>Plano Corporativo</h3>
-              <p>Para grandes empresas</p>
-              <h4>R$ 99,99/mês</h4>
-              <ul>
-                <li>Gerenciamento de contatos</li>
-                <li>Geração de leads</li>
-                <li>Análise de oportunidades</li>
-                <li>Acompanhamento de negócios</li>
-                <li>Relatórios personalizados</li>
-                <li>Integração com outros sistemas</li>
-              </ul>
-              <div className="testeBtn">
-                <a href="#" className="btn-secondary">Experimente agora</a>
-              </div>
-            </div>
+            <Card 
+            flat="Experimente Gratuitamente"
+            for="Para pequenas empresas"
+            price="R$0,00 por 15 dias"
+            advantage1 = "Gerenciamento de contatos"
+            advantage2 = "Geração de leads"
+            advantage3 = "Análise de oportunidades"
+            advantage4 = "Acompanhamento de negócios"
+            />
+            <Card 
+            flat="Plano Avançado"
+            for="Para médias empresas"
+            price="R$ 49,99/mês"
+            advantage1 = "Gerenciamento de contatos"
+            advantage2 = "Geração de leads"
+            advantage3 = "Análise de oportunidades"
+            advantage4 = "Acompanhamento de negócios"
+            advantage5 = "Relatórios personalizados"
+            />
+            <Card 
+            flat="Plano Corporativo"
+            for="Para grandes empresas"
+            price="R$ 99,99/mês"
+            advantage1 = "Gerenciamento de contatos"
+            advantage2 = "Geração de leads"
+            advantage3 = "Análise de oportunidades"
+            advantage4 = "Acompanhamento de negócios"
+            advantage5 = "Relatórios personalizados"
+            advantage6 = "Integração com outros sistemas"
+            />
           </div>
         </div>
       </section>
